@@ -10,6 +10,14 @@ import Profile from "./pages/Profile"
 import Search from "./pages/Search"
 import Message from "./pages/Message"
 
+function DisplayTabBar() {
+  if (window.location.href=="https://winstagramm.herokuapp.com/" || window.location.href=="https://winstagramm.herokuapp.com/login" || window.location.href=="https://winstagramm.herokuapp.com/register"||window.location.href=="https://winstagramm.herokuapp.com/registertwo") {
+    return
+  }else{
+    return <TabBar />
+  }
+  
+}
 
 function App() {
   return (
@@ -26,7 +34,7 @@ function App() {
               <Route path="/message" exact element={<Message/>}/>
           </Routes>
         </BrowserRouter>
-        <TabBar />
+        {DisplayTabBar()}
     </div>
   );
 }
