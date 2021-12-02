@@ -6,6 +6,10 @@ import Register from './pages/Register';
 import RegisterStepTwo from './pages/RegisterStepTwo';
 import Discover from './pages/Discover';
 import TabBar from './components/TabBar';
+import Profile from "./pages/Profile"
+import Search from "./pages/Search"
+import Message from "./pages/Message"
+
 
 function App() {
   return (
@@ -17,6 +21,9 @@ function App() {
               <Route path="/register" exact element={<Register/>}/>
               <Route path="/registertwo" exact element={<RegisterStepTwo/>}/>
               <Route path="/discover" exact element={<Discover/>}/>
+              <Route path="/profile" exact element={<Profile/>}/>
+              <Route path="/search" exact element={<Search/>}/>
+              <Route path="/message" exact element={<Message/>}/>
           </Routes>
         </BrowserRouter>
         <TabBar />

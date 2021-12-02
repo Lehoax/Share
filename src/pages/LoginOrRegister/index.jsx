@@ -1,7 +1,7 @@
 import React from "react";
 import ConnectionButton from '../../components/ConnectionButton';
 import ShortProfile from '../../components/ShortProfile';
-
+import share from "../../assets/imgs/2901214.png"
 import "./style.css"
 
 function LoginOrRegister(props) {
@@ -9,7 +9,7 @@ function LoginOrRegister(props) {
         <div>
             <div className="login_or_register">
                 <div className="center_page">
-                   <img className="logo_app" src="https://cdn-icons.flaticon.com/png/512/2901/premium/2901214.png?token=exp=1638151556~hmac=1f8d6a0f4a3c5636495eae9754ceb6f2" />
+                   <img className="logo_app" src={share} />
                     <h2 className="title_app">share</h2>
                 </div>
                 <div id="margin">

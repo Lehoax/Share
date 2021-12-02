@@ -21,7 +21,7 @@ class Field extends React.Component{
             <form>
                 <input placeholder="Email" className="field" type="email" value={this.state.email} onChange={this.handleChange} />
                 <input placeholder="Password" className="field" type="password" value={this.state.password} onChange={this.handleChange} />
-                <a href="http://localhost:3000/discover"><Button name={this.props.name} type="button"/></a>
+                <a href="/discover"><Button name={this.props.name} type="button"/></a>
             </form>
         );
     }
