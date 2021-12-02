@@ -8,24 +8,20 @@ class Field extends React.Component{
         this.state = {email: '', password: ''};
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
         this.setState({[event.target.type]: event.target.value});
     }
     
-    handleSubmit(event) {
-        event.preventDefault();
-        console.log(event.name);
-    }  
+
    
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form>
                 <input placeholder="Email" className="field" type="email" value={this.state.email} onChange={this.handleChange} />
                 <input placeholder="Password" className="field" type="password" value={this.state.password} onChange={this.handleChange} />
-                <Button type="submit" name={this.props.name}/>
+                <a href="http://localhost:3000/discover"><Button name={this.props.name} type="button"/></a>
             </form>
         );
     }

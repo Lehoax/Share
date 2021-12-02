@@ -11,7 +11,16 @@ import Search from './pages/Search';
 import Message from './pages/Message';
 import Profile from './pages/Profile';
 
+function displayTabBar() {
+    if (document.location.href == "http://localhost:3000/" || document.location.href == "http://localhost:3000/login" || document.location.href == "http://localhost:3000/register" || document.location.href == "http://localhost:3000/registertwo") {
+      return
+    }else{
+      return <TabBar />
+    }
+}
+
 function App() {
+  console.log(document.location.href);
   return (
     <div className="App">
       <BrowserRouter>
@@ -26,7 +35,7 @@ function App() {
               <Route path="/profile" exact element={<Profile/>}/>
           </Routes>
         </BrowserRouter>
-        <TabBar />
+        {displayTabBar()}
     </div>
   );
 }

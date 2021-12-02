@@ -5,7 +5,7 @@ function Search(params) {
     return(
         <div>
             <h1 id="search_title" className="title_align">Search</h1>
-            <input class="search_bar" type="text" value="Not available"/>
+            <input className="search_bar" type="text" defaultValue="Not available"/>
         </div>
     )
 }
