@@ -1,3 +1,13 @@
+#Share
+
+J'ai créé cette application pour m'entrainer en react c'est une application de partage de photos.
+Cette application est à destination des mobiles, il n'y a donc pas de css pour le desktop.
+
+le lien de la prodution : 
+https://winstagramm.herokuapp.com/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
