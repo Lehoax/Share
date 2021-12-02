@@ -1,0 +1,27 @@
+.pictures{
+    height: 343px;
+    width: 50vh;
+}
+.button_overlay{
+    border: none;
+}
+.modal{
+    overflow: hidden;
+}
+.modal_picture{
+    overflow: hidden;
+    width: 57vh;
+    max-width: 100%;
+	height: auto;
+
+}
+.react-responsive-modal-modal{
+    margin: 0;
+}
+.react-responsive-modal-closeButton{
+    fill: white;
+}
+.react-responsive-modal-modal{
+    padding: 0;
+    margin-top: 25vh;
+}

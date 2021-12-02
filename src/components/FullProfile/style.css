@@ -1,0 +1,14 @@
+.FullProfileAvatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+.FullProfile{
+    margin-top: 8vh;
+}
+.FullProfileBtn{
+    margin-bottom: 20px;
+}
+.FullProfileLocation{
+    margin-bottom: 35px;
+}

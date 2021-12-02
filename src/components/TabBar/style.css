@@ -1,0 +1,28 @@
+.tab_icon{
+    height: 24px;
+    width: 24px;
+    margin-top: 8px;
+}
+.tab_icon_center{
+    height: 20px;
+    width: 20px;
+    margin-top: 14%;
+}
+.tab_icon_center_around{
+    border: white solid 2px;
+    border-radius: 25px;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(#FF00D6, #FF4D00);
+    margin-bottom: 10px;
+}
+.TabBar{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 8px;
+    border-top: 1px solid gray;
+    background-color: white;
+}
