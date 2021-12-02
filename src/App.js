@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-          <Routes>
+          <Routes basename={process.env.PUBLIC_URL}>
               <Route path="/" exact element={<LoginOrRegister/>}/>
               <Route path="/login" exact element={<Login/>}/>
               <Route path="/register" exact element={<Register/>}/>
