@@ -24,15 +24,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-          <Routes basename={process.env.PUBLIC_URL}>
-              <Route path="/" exact element={<LoginOrRegister/>}/>
-              <Route path="/login" exact element={<Login/>}/>
-              <Route path="/register" exact element={<Register/>}/>
-              <Route path="/registertwo" exact element={<RegisterStepTwo/>}/>
-              <Route path="/discover" exact element={<Discover/>}/>
-              <Route path="/search" exact element={<Search/>}/>
-              <Route path="/message" exact element={<Message/>}/>
-              <Route path="/profile" exact element={<Profile/>}/>
+          <Routes>
+              <Route  basename={process.env.PUBLIC_URL} path="/" exact element={<LoginOrRegister/>}/>
+              <Route  basename={process.env.PUBLIC_URL} path="/login" exact element={<Login/>}/>
+              <Route  basename={process.env.PUBLIC_URL} path="/register" exact element={<Register/>}/>
+              <Route  basename={process.env.PUBLIC_URL} path="/registertwo" exact element={<RegisterStepTwo/>}/>
+              <Route  basename={process.env.PUBLIC_URL} path="/discover" exact element={<Discover/>}/>
+              <Route  basename={process.env.PUBLIC_URL} path="/search" exact element={<Search/>}/>
+              <Route  basename={process.env.PUBLIC_URL} path="/message" exact element={<Message/>}/>
+              <Route  basename={process.env.PUBLIC_URL} path="/profile" exact element={<Profile/>}/>
           </Routes>
         </BrowserRouter>
         {displayTabBar()}
