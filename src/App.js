@@ -25,14 +25,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
           <Routes>
-              <Route  basename={process.env.PUBLIC_URL} path="/" exact element={<LoginOrRegister/>}/>
-              <Route  basename={process.env.PUBLIC_URL} path="/login" exact element={<Login/>}/>
-              <Route  basename={process.env.PUBLIC_URL} path="/register" exact element={<Register/>}/>
-              <Route  basename={process.env.PUBLIC_URL} path="/registertwo" exact element={<RegisterStepTwo/>}/>
-              <Route  basename={process.env.PUBLIC_URL} path="/discover" exact element={<Discover/>}/>
-              <Route  basename={process.env.PUBLIC_URL} path="/search" exact element={<Search/>}/>
-              <Route  basename={process.env.PUBLIC_URL} path="/message" exact element={<Message/>}/>
-              <Route  basename={process.env.PUBLIC_URL} path="/profile" exact element={<Profile/>}/>
+              <Route path="https://lehoax.github.io/Share/" exact element={<LoginOrRegister/>}/>
+              <Route path="https://lehoax.github.io/Share/login" exact element={<Login/>}/>
+              <Route path="https://lehoax.github.io/Share/register" exact element={<Register/>}/>
+              <Route path="https://lehoax.github.io/Share/registertwo" exact element={<RegisterStepTwo/>}/>
+              <Route path="https://lehoax.github.io/Share/discover" exact element={<Discover/>}/>
+              <Route path="https://lehoax.github.io/Share/search" exact element={<Search/>}/>
+              <Route path="https://lehoax.github.io/Share/message" exact element={<Message/>}/>
+              <Route path="https://lehoax.github.io/Share/profile" exact element={<Profile/>}/>
           </Routes>
         </BrowserRouter>
         {displayTabBar()}
