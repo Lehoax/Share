@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css"
-import SearchResult from "../../components/SearchResultat"
+import SearchResult from "../../components/SearchResult"
 require('dotenv').config();
 
 class Search extends React.Component {
