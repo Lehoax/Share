@@ -1,0 +1,12 @@
+.result_img{
+    width: 50vh;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+ul{
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+    display: flex;
+    flex-wrap: wrap;
+}

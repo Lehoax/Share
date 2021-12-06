@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import {BrowserRouter as BrowserRouter, Route, Routes} from 'react-router-dom'
 import LoginOrRegister from './pages/LoginOrRegister';
@@ -9,9 +10,12 @@ import TabBar from './components/TabBar';
 import Profile from "./pages/Profile"
 import Search from "./pages/Search"
 import Message from "./pages/Message"
+import NewPicture from './pages/NewPicture/NewPicture';
+
+var url = "http://localhost:3000/"
 
 function DisplayTabBar() {
-  if (window.location.href=="https://winstagramm.herokuapp.com/" || window.location.href=="https://winstagramm.herokuapp.com/login" || window.location.href=="https://winstagramm.herokuapp.com/register"||window.location.href=="https://winstagramm.herokuapp.com/registertwo") {
+  if (window.location.href== url || window.location.href== url+"/login" || window.location.href== url+"/register"||window.location.href== url+"/registertwo") {
     return
   }else{
     return <TabBar />
@@ -32,8 +36,10 @@ function App() {
               <Route path="/profile" exact element={<Profile/>}/>
               <Route path="/search" exact element={<Search/>}/>
               <Route path="/message" exact element={<Message/>}/>
+              <Route path="/newPicture" exact element={<NewPicture/>}/>
           </Routes>
         </BrowserRouter>
+        
         {DisplayTabBar()}
     </div>
   );
