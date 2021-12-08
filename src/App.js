@@ -12,7 +12,7 @@ import Search from "./pages/Search"
 import Message from "./pages/Message"
 import NewPicture from './pages/NewPicture/NewPicture';
 
-var url = "http://winstagramm.herokuapp.com/"
+var url = "https://winstagramm.herokuapp.com/"
 
 function DisplayTabBar() {
   if (window.location.href== url || window.location.href== url+"/login" || window.location.href== url+"/register"||window.location.href== url+"/registertwo") {

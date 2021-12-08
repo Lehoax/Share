@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css"
-import Picture from "../Picture"
 
 function SearchResult(props) {
     return(
