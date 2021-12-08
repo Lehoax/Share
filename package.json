@@ -1,6 +1,7 @@
 {
   "name": "nft-app",
   "version": "0.1.0",
+  "homepage": "https://lehoax.github.io/Share/",
   "engines": {
     "node": "16.13.0"
   },
